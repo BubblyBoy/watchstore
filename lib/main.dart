@@ -64,7 +64,15 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ListView(
                 children: <Widget>[
                   GridView.count(
-                      crossAxisCount: 2)
+                      crossAxisCount: 2,
+                    primary: false,
+                    crossAxisSpacing: 10,
+                    childAspectRatio: 0.85,
+                    mainAxisSpacing: 10,
+                    shrinkWrap: true,
+                    children: <Widget>[],
+
+                  )
                 ],
 
               ),
@@ -97,4 +105,5 @@ class _MyHomePageState extends State<MyHomePage> {
 
     );
   }
+  Widget _buildcard( String imgpath, String title){};
 }
