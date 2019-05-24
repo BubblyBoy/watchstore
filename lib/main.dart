@@ -105,5 +105,25 @@ class _MyHomePageState extends State<MyHomePage> {
 
     );
   }
-  Widget _buildcard( String imgpath, String title){};
+  Widget _buildCard( String imgpath, String title , int rate , String star , String Desc){
+    return Padding(
+        padding: rate.isEven? EdgeInsets.only(left: 15): EdgeInsets.only(right: 15),
+      child: Container(
+        height: 400,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(
+            color: Colors.grey,
+            style: BorderStyle.solid,
+            width: 1.0
+          )
+        ),
+        child: Stack(
+          
+        ),
+      ),
+
+
+    );
+  }
 }
