@@ -66,17 +66,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   GridView.count(
                       crossAxisCount: 2,
                     primary: false,
-                    crossAxisSpacing: 2,
+                    crossAxisSpacing: 0,
                     childAspectRatio: 0.85,
-                    mainAxisSpacing: 5,
+                    mainAxisSpacing: 25,
                     shrinkWrap: true,
                     children: <Widget>[
-                      _buildCard('assets/w.jpg',4),
-                      _buildCard('assets/w1.jpg',4),
-                      _buildCard('assets/w6.jpg',4),
-                      _buildCard('assets/w9.jpg',4),
-                      _buildCard('assets/w23.jpg',4),
-                      _buildCard('assets/w25.jpg',4)
+                      _buildCard('assets/hublot.jpg',4, 'Hublot 21'),
+                      _buildCard('assets/hublot1.jpg',4, 'Hublot 200'),
+                      _buildCard('assets/hugo.png',4,'hugo '),
+                      _buildCard('assets/kenneth-cole.jpg',4,'Kenneth cole '),
+                      _buildCard('assets/lotus-watch.jpg',4, 'Lotus 1'),
+                      _buildCard('assets/trendy-blue.jpg',4,'Lotus 0')
 
                     ],
 
@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.transparent,
                   borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(50)
+                    bottomLeft: Radius.circular(20)
                   )
                     
                 ),
@@ -113,18 +113,18 @@ class _MyHomePageState extends State<MyHomePage> {
 
     );
   }
-  Widget _buildCard( String imgpath, int rate){
+  Widget _buildCard( String imgpath, int rate, String name){
     return Padding(
         padding: EdgeInsets.only(left: 10, right: 10),
       child: Container(
-        height: 400,
+        height: 550,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.4),
+              color: Colors.white,
               spreadRadius: 2,
-              blurRadius: 3,
+              blurRadius: 1,
             )
           ],
           border: Border.all(
@@ -138,18 +138,22 @@ class _MyHomePageState extends State<MyHomePage> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Container(
-                  height: 203,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    image: DecorationImage(
-                      image: AssetImage(imgpath),
-                      fit: BoxFit.cover,
-                    )
+                Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: Container(
+                    height: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      image: DecorationImage(
+                        image: AssetImage(imgpath),
+                        fit: BoxFit.cover,
+                      )
 
-                      
+
+                    ),
                   ),
-                )
+                ),SizedBox(width: 10,),
+                Text(name, style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
               ],
             )
           ],
