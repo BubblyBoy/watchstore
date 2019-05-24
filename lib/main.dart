@@ -66,11 +66,19 @@ class _MyHomePageState extends State<MyHomePage> {
                   GridView.count(
                       crossAxisCount: 2,
                     primary: false,
-                    crossAxisSpacing: 10,
+                    crossAxisSpacing: 2,
                     childAspectRatio: 0.85,
-                    mainAxisSpacing: 10,
+                    mainAxisSpacing: 5,
                     shrinkWrap: true,
-                    children: <Widget>[],
+                    children: <Widget>[
+                      _buildCard('assets/w.jpg',4),
+                      _buildCard('assets/w1.jpg',4),
+                      _buildCard('assets/w6.jpg',4),
+                      _buildCard('assets/w9.jpg',4),
+                      _buildCard('assets/w23.jpg',4),
+                      _buildCard('assets/w25.jpg',4)
+
+                    ],
 
                   )
                 ],
@@ -105,21 +113,47 @@ class _MyHomePageState extends State<MyHomePage> {
 
     );
   }
-  Widget _buildCard( String imgpath, String title , int rate , String star , String Desc){
+  Widget _buildCard( String imgpath, int rate){
     return Padding(
-        padding: rate.isEven? EdgeInsets.only(left: 15): EdgeInsets.only(right: 15),
+        padding: EdgeInsets.only(left: 10, right: 10),
       child: Container(
         height: 400,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.4),
+              spreadRadius: 2,
+              blurRadius: 3,
+            )
+          ],
           border: Border.all(
-            color: Colors.grey,
+            color: Colors.transparent,
             style: BorderStyle.solid,
             width: 1.0
           )
         ),
         child: Stack(
-          
+          children: <Widget>[
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Container(
+                  height: 203,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    image: DecorationImage(
+                      image: AssetImage(imgpath),
+                      fit: BoxFit.cover,
+                    )
+
+                      
+                  ),
+                )
+              ],
+            )
+          ],
+
         ),
       ),
 
