@@ -12,15 +12,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key,}) : super(key: key);
-
   _MyHomePageState createState() => _MyHomePageState();
 }
-
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,13 +25,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
             children: <Widget>[
             Container(
-
-              height: 200,
-
+              height: MediaQuery.of(context).size.height/3,
               decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.5),
+                      color: Colors.black.withOpacity(0.2),
                       spreadRadius: 6,
                       blurRadius: 3
                     )
@@ -47,13 +41,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   image: DecorationImage(image:AssetImage('assets/w4.jpg') ,
                   fit: BoxFit.cover)
               ),
-
             ),
               Padding(
                 padding: const EdgeInsets.only(left: 15 , right: 10),
                 child: Row(
-
-
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text('POPULAR',style: TextStyle(color: Colors.yellow[900],fontSize: 23),),
@@ -68,36 +59,35 @@ class _MyHomePageState extends State<MyHomePage> {
                     primary: false,
                     crossAxisSpacing: 0,
                     childAspectRatio: 0.85,
-                    mainAxisSpacing: 25,
+                    mainAxisSpacing: 20,
                     shrinkWrap: true,
                     children: <Widget>[
+
+
+                      
                       _buildCard('assets/hublot.jpg',4, 'Hublot 21'),
                       _buildCard('assets/hublot1.jpg',4, 'Hublot 200'),
                       _buildCard('assets/hugo.png',4,'hugo '),
                       _buildCard('assets/kenneth-cole.jpg',4,'Kenneth cole '),
                       _buildCard('assets/lotus-watch.jpg',4, 'Lotus 1'),
                       _buildCard('assets/trendy-blue.jpg',4,'Lotus 0')
-
                     ],
-
                   )
                 ],
 
               ),
 
                 decoration: BoxDecoration(
-                  color: Colors.transparent,
+        
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(20)
-                  )
-                    
+                  )    
                 ),
-                height:344,
+                height:MediaQuery.of(context).size.height/2+10,
                 ),
             Padding(
               padding: const EdgeInsets.only(left: 15 , right: 10),
               child: Row(
-
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text('NEW PRODUCTS',style: TextStyle(color: Colors.yellow[900],fontSize: 23),),
@@ -106,29 +96,25 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
         ],
           ),
-
       ),
-
-
-
     );
   }
   Widget _buildCard( String imgpath, int rate, String name){
     return Padding(
         padding: EdgeInsets.only(left: 10, right: 10),
       child: Container(
-        height: 550,
+        height: 500,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
               color: Colors.white,
-              spreadRadius: 2,
-              blurRadius: 1,
+              spreadRadius: 0,
+              blurRadius: 0,
             )
           ],
           border: Border.all(
-            color: Colors.transparent,
+            color: Colors.white,
             style: BorderStyle.solid,
             width: 1.0
           )
@@ -148,20 +134,16 @@ class _MyHomePageState extends State<MyHomePage> {
                         image: AssetImage(imgpath),
                         fit: BoxFit.cover,
                       )
-
-
                     ),
                   ),
-                ),SizedBox(width: 10,),
+                ),
+                SizedBox(width: 10,),
                 Text(name, style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
               ],
             )
           ],
-
         ),
       ),
-
-
     );
   }
 }
