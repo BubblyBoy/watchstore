@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text('POPULAR',style: TextStyle(color: Colors.yellow[900],fontSize: 23),),
+                    Text('POPULAR',style: TextStyle(color: Colors.yellow[900],fontSize: 23, fontFamily: 'Acme'),),
                     IconButton(icon: Icon(Icons.arrow_forward, color: Colors.yellow[900],),color: Colors.yellow[900], iconSize: 30, onPressed: null)
                   ],),
               ),
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Text('NEW PRODUCTS',style: TextStyle(color: Colors.yellow[900],fontSize: 23),),
+                  Text('NEW PRODUCTS',style: TextStyle(color: Colors.yellow[900],fontSize: 23,fontFamily: 'Acme'),),
                   IconButton(icon: Icon(Icons.arrow_forward, color: Colors.yellow[900],),color: Colors.yellow[900], iconSize: 30, onPressed: null)
                 ],),
             ),
