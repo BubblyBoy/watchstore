@@ -62,9 +62,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisSpacing: 20,
                     shrinkWrap: true,
                     children: <Widget>[
-
-
-                      
                       _buildCard('assets/hublot.jpg',4, 'Hublot 21'),
                       _buildCard('assets/hublot1.jpg',4, 'Hublot 200'),
                       _buildCard('assets/hugo.png',4,'hugo '),
@@ -74,11 +71,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   )
                 ],
-
               ),
-
                 decoration: BoxDecoration(
-        
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(20)
                   )    
@@ -125,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(4.0),
+                  padding: const EdgeInsets.only(top: 4, left: 4),
                   child: Container(
                     height: 150,
                     decoration: BoxDecoration(
@@ -137,8 +131,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                SizedBox(width: 10,),
-                Text(name, style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
+
+                SizedBox(width: 0,),
+                Padding(
+                  padding:  EdgeInsets.only(left: 15),
+                  child:  Text(name, style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold,),),
+                  
+                )
+               
               ],
             )
           ],
