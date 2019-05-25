@@ -69,6 +69,22 @@ flutter:
     - family: Satisfy
       fonts:
         - asset: assets/Satisfy-Regular.ttf
+    - family: Montserrat
+      fonts:
+        - asset: assets/Montserrat-Black.ttf
+        - asset: assets/Montserrat-Bold.ttf
+        - asset: assets/Montserrat-ExtraBold.ttf
+        - asset: assets/Montserrat-Medium.ttf
+        - asset: assets/Montserrat-Regular.ttf
+        - asset: assets/Montserrat-SemiBold.ttf
+        - asset: assets/Montserrat-Thin.ttf
+    - family: Quicksand
+      fonts:
+        - asset: assets/Quicksand-Bold.ttf
+        - asset: assets/Quicksand-Light.ttf
+        - asset: assets/Quicksand-Medium.ttf
+        - asset: assets/Quicksand-Regular.ttf 
+
 
   # fonts:
   #   - family: Schyler
