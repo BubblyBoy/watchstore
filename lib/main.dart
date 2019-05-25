@@ -135,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(width: 0,),
                 Padding(
                   padding:  EdgeInsets.only(left: 15),
-                  child:  Text(name, style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold,),),
+                  child:  Text(name, style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold,fontFamily: 'Acme'),),
                   
                 )
                
