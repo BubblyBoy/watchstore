@@ -64,9 +64,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisSpacing: 20,
                     shrinkWrap: true,
                     children: <Widget>[
-                      _buildCard('assets/hublot.jpg',4, 'Hublot 21',"hublot 21 new coming Watch....."),
-                      _buildCard('assets/hublot1.jpg',4, 'Hublot 200',"hublot 200 new coming....."),
-                      _buildCard('assets/hugo.png',4,'hugo ',"hugo new coming Watch....."),
+                      _buildCard('assets/hublot.jpg',4, 'Hublot 21',"Hublot 21 new coming Wat....."),
+                      _buildCard('assets/hublot1.jpg',4, 'Hublot 200',"Hublot 200 new coming....."),
+                      _buildCard('assets/hugo.png',4,'hugo ',"Hugo new coming Watch....."),
                       _buildCard('assets/kenneth-cole.jpg',4,'Kenneth cole ',"Kenneth new coming Watch....."),
                       _buildCard('assets/lotus-watch.jpg',4, 'Lotus 1',"Lotus 1 new coming Watch....."),
                       _buildCard('assets/trendy-blue.jpg',4,'Lotus 0',"Lotus 0 new coming Watch.....")
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     bottomLeft: Radius.circular(20)
                   )    
                 ),
-                height:MediaQuery.of(context).size.height/2+60,
+                height:MediaQuery.of(context).size.height/2+63,
                 ),
             Padding(
               padding: const EdgeInsets.only(left: 15 , right: 10),
@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Padding(
         padding: EdgeInsets.only(left: 10, right: 10),
       child: Container(
-        height: MediaQuery.of(context).size.height,
+        height:100,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
@@ -146,15 +146,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text(desc, style: TextStyle(fontSize: 10 , fontFamily: 'JosefiSans'),),
                 ),
 
-                SizedBox(height: 1,),
+                SizedBox(height: 5,),
                 Padding(
-                  padding: EdgeInsets.only(left: 15),
+                  padding: EdgeInsets.only(left: 15, right: 25),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      Icon(Icons.star , size: 15,)
+                      Icon(Icons.star , size: 15, color: Colors.yellow[900],),
+                      Icon(Icons.star , size: 15, color: Colors.yellow[900],) ,
+                      Icon(Icons.star , size: 15, color: Colors.yellow[900],),
+                      Icon(Icons.star , size: 15, color: Colors.yellow[900],),
+                      Icon(Icons.star , size: 15, color: Colors.yellow[900],),
+                      Text("4.0", style: TextStyle(fontSize: 10,color: Colors.yellow[900], fontFamily: 'JosefiSans' ) ,)
                     ],
+
                   ),
                 )
+
                
               ],
             )
