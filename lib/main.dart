@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,7 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
             children: <Widget>[
             Container(
-              height: MediaQuery.of(context).size.height/3,
+              height: MediaQuery.of(context).size.height/4,
               decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
@@ -145,6 +146,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text(desc, style: TextStyle(fontSize: 10 , fontFamily: 'JosefiSans'),),
                 ),
 
+                SizedBox(height: 1,),
+                Padding(
+                  padding: EdgeInsets.only(left: 15),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.star)
+                    ],
+                  ),
+                )
                
               ],
             )
