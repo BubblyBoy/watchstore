@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     shrinkWrap: true,
                     children: <Widget>[
                       _buildCard('assets/hublot.jpg',4, 'Hublot 21',"hublot 21 new coming Watch....."),
-                      _buildCard('assets/hublot1.jpg',4, 'Hublot 200',"hublot 200 new coming Watch....."),
+                      _buildCard('assets/hublot1.jpg',4, 'Hublot 200',"hublot 200 new coming....."),
                       _buildCard('assets/hugo.png',4,'hugo ',"hugo new coming Watch....."),
                       _buildCard('assets/kenneth-cole.jpg',4,'Kenneth cole ',"Kenneth new coming Watch....."),
                       _buildCard('assets/lotus-watch.jpg',4, 'Lotus 1',"Lotus 1 new coming Watch....."),
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     bottomLeft: Radius.circular(20)
                   )    
                 ),
-                height:MediaQuery.of(context).size.height/2+10,
+                height:MediaQuery.of(context).size.height/2+60,
                 ),
             Padding(
               padding: const EdgeInsets.only(left: 15 , right: 10),
@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Padding(
         padding: EdgeInsets.only(left: 10, right: 10),
       child: Container(
-        height: MediaQuery.of(context).size.height/1.0,
+        height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
@@ -121,9 +121,9 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.only(top: 4, left: 4),
+                  padding: const EdgeInsets.only(top: 6, left: 4),
                   child: Container(
-                    height: 150,
+                    height: 140,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                       image: DecorationImage(
@@ -151,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: EdgeInsets.only(left: 15),
                   child: Row(
                     children: <Widget>[
-                      Icon(Icons.star)
+                      Icon(Icons.star , size: 15,)
                     ],
                   ),
                 )
