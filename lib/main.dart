@@ -52,6 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],),
               ),
             Container(
+              
               child: ListView(
                 children: <Widget>[
                   GridView.count(
@@ -62,12 +63,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisSpacing: 20,
                     shrinkWrap: true,
                     children: <Widget>[
-                      _buildCard('assets/hublot.jpg',4, 'Hublot 21'),
-                      _buildCard('assets/hublot1.jpg',4, 'Hublot 200'),
-                      _buildCard('assets/hugo.png',4,'hugo '),
-                      _buildCard('assets/kenneth-cole.jpg',4,'Kenneth cole '),
-                      _buildCard('assets/lotus-watch.jpg',4, 'Lotus 1'),
-                      _buildCard('assets/trendy-blue.jpg',4,'Lotus 0')
+                      _buildCard('assets/hublot.jpg',4, 'Hublot 21',"hublot 21 new coming Watch....."),
+                      _buildCard('assets/hublot1.jpg',4, 'Hublot 200',"hublot 200 new coming Watch....."),
+                      _buildCard('assets/hugo.png',4,'hugo ',"hugo new coming Watch....."),
+                      _buildCard('assets/kenneth-cole.jpg',4,'Kenneth cole ',"Kenneth new coming Watch....."),
+                      _buildCard('assets/lotus-watch.jpg',4, 'Lotus 1',"Lotus 1 new coming Watch....."),
+                      _buildCard('assets/trendy-blue.jpg',4,'Lotus 0',"Lotus 0 new coming Watch.....")
                     ],
                   )
                 ],
@@ -93,11 +94,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-  Widget _buildCard( String imgpath, int rate, String name){
+  Widget _buildCard( String imgpath, int rate, String name,String desc){
     return Padding(
         padding: EdgeInsets.only(left: 10, right: 10),
       child: Container(
-        height: 500,
+        height: MediaQuery.of(context).size.height/1.0,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
@@ -136,8 +137,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding:  EdgeInsets.only(left: 15),
                   child:  Text(name, style: TextStyle(fontSize: 20 ,fontFamily: 'Acme'),),
+                
                   
-                )
+                ),
+                SizedBox(height: 1,),
+                Padding(padding: EdgeInsets.only(left: 15),
+                child: Text(desc, style: TextStyle(fontSize: 10 , fontFamily: 'JosefiSans'),),
+                ),
+
                
               ],
             )
