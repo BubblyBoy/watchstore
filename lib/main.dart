@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(50),
                   ),
-                  image: DecorationImage(image:AssetImage('assets/w4.jpg') ,
+                  image: DecorationImage(image:AssetImage('assets/w44.jpg') ,
                   fit: BoxFit.cover)
               ),
             ),
@@ -157,7 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Icon(Icons.star , size: 15, color: Colors.yellow[900],),
                       Icon(Icons.star , size: 15, color: Colors.yellow[900],),
                       Icon(Icons.star , size: 15, color: Colors.yellow[900],),
-                      Text("4.0", style: TextStyle(fontSize: 10,color: Colors.yellow[900], fontFamily: 'JosefiSans' ) ,)
+                      Text("5.0", style: TextStyle(fontSize: 10,color: Colors.yellow[900], fontFamily: 'JosefiSans' ) ,)
                     ],
 
                   ),
