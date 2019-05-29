@@ -83,7 +83,14 @@ flutter:
         - asset: assets/Quicksand-Bold.ttf
         - asset: assets/Quicksand-Light.ttf
         - asset: assets/Quicksand-Medium.ttf
-        - asset: assets/Quicksand-Regular.ttf 
+        - asset: assets/Quicksand-Regular.ttf
+    - family: JosefinSans
+      fonts:
+        - asset: assets/JosefinSans.ttf
+        
+
+     
+   
 
 
   # fonts:
