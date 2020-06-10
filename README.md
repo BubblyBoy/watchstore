@@ -6,7 +6,7 @@ a UI impalementaion of Watchstore
 
 | 1.Design | 2.Implementation|
 |------|-------|
-|<img src="screenshots/Screenshot.png" width="300">|<img src="assets/Screenshot.png" width="300">|
+|<img src="screenshots/design.jpg" width="300">|<img src="screenshots/Screenshot.png" width="300">|
 
 ## Getting Started
 
