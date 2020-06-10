@@ -1,6 +1,12 @@
 # watchstore
 
-A new Flutter application.
+a UI impalementaion of Watchstore
+
+### Show some :heart: and :star: the repo to support the project and follow me
+
+| 1.Design | 2.Implementation|
+|------|-------|
+|<img src="screenshots/Screenshot.png" width="300">|<img src="assets/Screenshot.png" width="300">|
 
 ## Getting Started
 
